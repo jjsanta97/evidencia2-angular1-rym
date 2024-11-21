@@ -1,0 +1,25 @@
+h2,
+mat-dialog-content {
+  text-align: center;
+}
+
+img {
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.character-info {
+  margin: 15px;
+  font-size: 18px;
+}
+
+p {
+  margin-top: -10px;
+}
+
+.character-dialog {
+  position: relative;
+  padding: 16px;
+  text-align: right;
+}

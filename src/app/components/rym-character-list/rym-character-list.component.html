@@ -1,0 +1,22 @@
+<div class="title">
+  <h1>Rick and Morty</h1>
+</div>
+<div class="characters-list">
+  @for(character of charactersList; track $index) {
+  <mat-card
+    class="character-card"
+    appearance="outlined"
+    (click)="characterDialog(character)"
+  >
+    <div class="character-img">
+      <img mat-card-md-image [src]="character.image" alt="" />
+    </div>
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>{{ character.name }}</mat-card-title>
+        <mat-card-subtitle>Status: {{ character.status }}</mat-card-subtitle>
+      </mat-card-title-group>
+    </mat-card-header>
+  </mat-card>
+  }
+</div>
